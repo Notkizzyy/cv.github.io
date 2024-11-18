@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Wildan Aulia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            background-color: #0d0d0d00;
+        }
+
+        .logo {
+            color: #fdd835;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #ccc;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 1em;
+        }
+
+        /* GitHub Logo */
+        .github-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .github-link img {
+            width: 30px;
+            height: 30px;
+            margin-left: 20px;
+        }
+        .about {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: auto;
+        }
+        .about-content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .skills {
+            margin-top: 40px;
+            padding: 50px;
+        }
+        .skills h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .skill-card {
+            text-align: center;
+            border: 1px solid #ffc107;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .skill-card img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+            <div class="logo" <button type="button">wildanAulia</button></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portofolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="github-link">
+            <a href="https://github.com/Notkizzyy" target="_blank">
+                <img src="assets/github-icon.png" alt="GitHub">
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="assets/profile.png" alt="Wildan Aulia">
+            <p>Hi everybody! My name is Wildan Aulia. I am a web developer from Bandung with a passion for creating functional and aesthetic websites.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="assets/html-icon.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/css-icon.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/js-icon.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/lua-icon.png" alt="PHP">
+                <p>Lua</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

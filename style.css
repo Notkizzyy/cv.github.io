@@ -1,0 +1,151 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+/* Navbar */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #0d0d0d00;
+}
+
+.logo {
+    color: #fdd835;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* GitHub Logo */
+.github-link {
+    display: flex;
+    align-items: center;
+}
+
+.github-link img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 500px;
+    min-height: 90vh;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h2 {
+    color: #f8c307;
+    font-size: 1.2rem;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #f8c307;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(248, 195, 7, 0.5);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About, Portfolio, Blog Section */
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.about, .portfolio, .blog {
+    max-width: 500px;
+    margin: auto;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #222;
+    color: #f8c307;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 20px; /* Gunakan padding yang lebih kecil */
+    }
+
+
+    .profile-picture {
+        margin-top: 10px;
+    }
+
+    .portfolio-items {
+        flex-direction: column;
+    }
+}
