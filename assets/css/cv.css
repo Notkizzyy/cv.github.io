@@ -6,44 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 50px;
-    background-color: #0d0d0d;
-}
-
-.logo {
-    color: #fdd835;
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-nav ul li a {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 400;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #fdd835;
-}
-
-.github-link img {
-    width: 35px;
-    height: 35px;
-    margin-left: 15px;
-}
-
 /* CV Container */
 .cv-container {
     display: flex;
