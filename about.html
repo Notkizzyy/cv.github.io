@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Wildan Aulia</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -21,43 +24,31 @@
             padding: 10px 50px;
             background-color: #0d0d0d00;
         }
-
         .logo {
             color: #fdd835;
             font-size: 1.5em;
             font-weight: bold;
         }
-
         nav {
             flex: 1;
             display: flex;
             justify-content: center;
         }
-
         nav ul {
             display: flex;
             list-style: none;
             padding: 0;
             margin: 0;
         }
-
         nav ul li {
             margin: 0 20px;
         }
-
         nav ul li a {
             color: #ccc;
             text-decoration: none;
             font-weight: 400;
             font-size: 1em;
         }
-
-        /* GitHub Logo */
-        .github-link {
-            display: flex;
-            align-items: center;
-        }
-
         .github-link img {
             width: 30px;
             height: 30px;
@@ -84,6 +75,7 @@
         .skills {
             margin-top: 40px;
             padding: 50px;
+            text-align: center; /* Menengahkan teks */
         }
         .skills h3 {
             font-size: 1.5rem;
@@ -105,17 +97,67 @@
             width: 50px;
             margin-bottom: 10px;
         }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact h3 {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .contact ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact ul li a {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact ul li a i {
+            margin-right: 8px;
+        }
+
+        .contact ul li a:hover {
+            color: #ffc107;
+}
+
+
+        .contact ul li a:hover {
+            color: #ffc107; /* Warna saat hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #777;
+        }
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <header>
-            <div class="logo" <button type="button">wildanAulia</button></div>
+        <div class="logo">wildanAulia</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="portofolio.html">Portfolio</a></li>
+                <li><a href="porto.html">Portfolio</a></li>
             </ul>
         </nav>
         <div class="github-link">
@@ -130,7 +172,7 @@
         <h2>About Me</h2>
         <div class="about-content">
             <img src="assets/image/profile.png" alt="Wildan Aulia">
-            <p>Hi everybody! My name is Wildan Aulia. I am a web developer from Bandung with a passion for creating functional and aesthetic websites.</p>
+            <p>Saya adalah mahasiswa semester 3 bidang Teknik Informatika yang penuh semangat dan siap untuk membawa energi positif ke dunia profesional. Dengan latar belakang pendidikan di bidang Teknik Informatika di LPKIA Bandung, saya telah mendapatkan pemahaman dasar yang kuat dalam prinsip-prinsip ilmu jaringan komputer dan keterampilan praktis yang diperlukan untuk terus belajar dan berkembang tentang ilmu teknologi.</p>
         </div>
     </section>
 
@@ -151,10 +193,45 @@
                 <p>JavaScript</p>
             </div>
             <div class="skill-card">
-                <img src="assets/image/lua-icon.png" alt="PHP">
+                <img src="assets/image/lua-icon.png" alt="Lua">
                 <p>Lua</p>
             </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>
+                <a href="mailto:wildanaulia42@gmail.com" target="_blank">
+                    <i class="fa fa-envelope"></i> wildanaulia42@gmail.com
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/_wildan69" target="_blank">
+                    <i class="fa fa-instagram"></i> _wildan69
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/6283841057706" target="_blank">
+                    <i class="fa fa-whatsapp"></i> 6283841057706
+                </a>
+            </li>
+            <li>
+                <a href="https://www.google.com/maps?q=Jl.Penclut+Desa,+Rancamanyar,+Kec.+Baleendah" target="_blank">
+                    <i class="fa fa-map-marker-alt"></i> jl.penclut Desa, Rancamanyar, Kec. Baleendah
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Wildan Aulia. All rights reserved.</p>
+    </footer>
 </body>
 </html>
